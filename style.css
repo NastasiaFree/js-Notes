@@ -1,0 +1,96 @@
+.note_form {
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(245, 148, 208, 0.219);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.note_title {
+    text-align: center;
+    font-size: 45px;
+    color: rgb(88, 19, 79);
+    text-shadow: 1px 3px 6px black;
+    background-color: rgba(245, 148, 208, 0.219);
+    padding: 20px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.note_text_title,
+.note_text_content {
+    height: 5em;
+    font-weight: 700;
+    background: rgba(248, 175, 220, 0.219);
+    border: 2px solid rgb(88, 19, 79);
+}
+.note_text_content {
+    width: 50%;
+    line-height: 20px;
+}
+
+.note_button_submit {
+    width: 150px;
+    height: 3em;
+    background-color: rgba(109, 7, 70, 0.205);
+    font-weight: bold;
+    font-size: 17px;
+    border: 2px solid rgb(88, 19, 79);
+    color: rgb(88, 19, 79);
+}
+
+textarea::placeholder {
+    line-height: 5em;
+}
+
+
+.note_list {
+    width: calc(70% - 44px);
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(245, 102, 190, 0.219);
+    margin: 0 auto;
+    padding: 40px;
+    border: 2px solid rgb(88, 19, 79); 
+}
+
+li {
+    list-style-type: none;
+}
+li:before {
+    content: '\221A';
+    font-weight: bold;
+    font-size: 20px;
+}
+li {
+    display: grid;
+    grid-template-columns: 20px 2fr 3fr 1fr 1fr;
+    gap: 3%;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.note_list_item_title {
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 200px;
+    overflow-wrap: break-word;
+}
+
+.note_list_item_content {
+    max-width: 300px;
+    overflow-wrap: break-word;
+}
+
+.note_list_item_edit,
+.note_list_item_remove {
+    width: 80px;
+    background-color: rgba(109, 7, 70, 0.205);
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid rgb(88, 19, 79);
+    color: rgb(88, 19, 79);
+}
